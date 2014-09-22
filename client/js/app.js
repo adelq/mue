@@ -1,4 +1,5 @@
 $.fn.stars = function() {
+  'use strict';
 	return $(this).each(function() {
 		// Get the value
 		var val = parseFloat($(this).html());
@@ -9,4 +10,4 @@ $.fn.stars = function() {
 		// Replace the numerical value with stars
 		$(this).html(span);
 	});
-}
+};
