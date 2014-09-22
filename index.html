@@ -40,13 +40,14 @@
 				</div>
 			</div>
 		</div>
+    </div>
 	</body>
 	
 <template name="movieList">
 <div class = "modal-body">
 {{#each movies}}
 <div class = "moviebox">
-	<img class = "moviepic" src="{{ posters.detailed }}"</img>
+	<img class = "moviepic" src="{{ posters.detailed }}">
 	<div class = "movie">
 	
 		<h1><a href="{{ links.alternate }}" target="_blank">{{ title }}</a></h1>
@@ -61,5 +62,6 @@
 	
 </div>
 {{/each}}
+</div>
 </template>
 
